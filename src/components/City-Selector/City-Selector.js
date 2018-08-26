@@ -3,9 +3,14 @@ import React from 'react';
 
 class CitySelector extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.cityInput = React.createRef();
+    }    
+
     formSubmitHandler = (event) => {
         event.preventDefault();
-        this.props.onSelectCity(this.cityInput.value);
+        this.props.onSelectCity(this.cityInput.current.value);
     }  
 
     render() {
@@ -16,7 +21,7 @@ class CitySelector extends React.Component {
                 <form onSubmit={this.formSubmitHandler}>
                     <input
                         type="text"
-                        ref={(input) => { this.cityInput = input }}
+                        ref={this.cityInput}
                         defaultValue={this.props.city}
                     />
                 </form>
