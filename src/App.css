@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+[data-theme=mojo] { 
+  background-color: #BE4334;
+}
+
+[data-theme=governor-bay] { 
+  background-color: #3936B5;
+}
+
+[data-theme=pickled-bluewood] { 
+  background-color: #28344D;
+}
+
+[data-theme=dixie] { 
+  background-color: #E3921A;
+}
+
+[data-theme=thunder] { 
+  background-color: #392938;
+}
+
+[data-theme=burnt-sienna] { 
+  background-color: #E9663D;
+}
+
+[data-theme=cocoa-bean] { 
+  background-color: #53212D;
+}
+
+[data-theme=green-kelp] { 
+  background-color: #273C29;
+}
+
+[data-theme=de-york] { 
+  background-color: #80CE8A;
+}
+

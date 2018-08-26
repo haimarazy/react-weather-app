@@ -1,0 +1,91 @@
+.SideMenu {
+    position: fixed;
+    width: 300px;
+    max-width: 70%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: #F2D6D3;
+    color: black;
+    padding: 32px 16px;
+    transition: transform 0.4s ease-out;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.SideMenuVisible {
+    transform: translateX(0);
+}
+
+.SideMenuHidden {
+    transform: translateX(-100%);
+}
+
+.ClickCatcher {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #ccc;
+    opacity: 0;
+}
+
+.ClickCatcherHidden {
+    transform: translateX(-100%);
+}
+
+.ThemePicker {
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+}
+
+.ThemePickerItem {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  min-width: 33.33%
+}
+
+.ThemePickerItem:nth-child(1) {
+    border-top-left-radius: 30%;
+}
+
+.ThemePickerItem:nth-child(3) {
+    border-top-right-radius: 30%;
+}
+
+.ThemePickerItem:nth-child(7) {
+    border-bottom-left-radius: 30%;
+}
+
+.ThemePickerItem:nth-child(9) {
+    border-bottom-right-radius: 30%;
+}
+
+
+.MenuCloseButton {
+    font-size: 32px;
+    color:  #D8897F;
+    cursor: pointer;
+    position: absolute;
+    right: 6px;
+    top: -4px;
+    font-weight: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    margin: 15px 0;
+    font-style: italic;
+    width: 90%;
+    background-color: #F2D6D3;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #D8897F;
+    font-size: 15px;
+}
