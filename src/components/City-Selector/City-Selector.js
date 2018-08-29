@@ -1,5 +1,5 @@
 import React from 'react';
-
+import cssClasses from './City-Selector.css';
 
 class CitySelector extends React.Component {
 
@@ -21,6 +21,7 @@ class CitySelector extends React.Component {
                 <form onSubmit={this.formSubmitHandler}>
                     <input
                         type="text"
+                        className={cssClasses['City-Input']}
                         ref={this.cityInput}
                         defaultValue={this.props.city}
                     />
