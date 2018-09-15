@@ -14,6 +14,12 @@ class App extends React.Component {
 		this.props.getForecast(this.props.city);
 	}
 
+	componentDidUpdate(prevProps, prevState) {
+		if (prevProps.city !== this.props.city) {
+			this.props.getForecast(this.props.city);
+		}
+	}	
+
 	render() {
 
 		return (
@@ -24,6 +30,7 @@ class App extends React.Component {
 				<SideMenu />
 			</div>
 		);
+		
 	}
 }
 
