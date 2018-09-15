@@ -1,7 +1,7 @@
 import React from 'react';
 import cssClasses from './Theme-Picker.css';
 import { connect } from 'react-redux';
-import * as actionTypes from '../../store/action-types';
+import * as actionCreators from '../../store/action-creators';
 
 const themeArray = [
     "mojo",
@@ -45,7 +45,7 @@ class ThemePicker extends React.Component {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onChangeTheme: (theme) => dispatch({ type: actionTypes.CHANGE_THEME, theme: theme })
+        onChangeTheme: (theme) => dispatch(actionCreators.changeTheme(theme))
     }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import cssClasses from './City-Selector.css';
 import { connect } from 'react-redux';
-import * as actionTypes from './../../store/action-types';
+import * as actionCreators from './../../store/action-creators';
 
 class CitySelector extends React.Component {
 
@@ -43,7 +43,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onChangeCity: (city) => dispatch({ type: actionTypes.CHANGE_CITY, value: city})
+        onChangeCity: (city) => dispatch(actionCreators.changeCity(city))
     }
 }
 
