@@ -1,12 +1,27 @@
 import React from 'react';
 import cssClasses from './Menu-Toggle.css';
+import { connect } from 'react-redux';
+import * as actionTypes from './../../store/action-types';
 
-const menuToggle = (props) => (
-    <div className={cssClasses.MenuToggle} onClick={props.toggleMenu} >
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-);
+class MenuToggle extends React.Component {
 
-export default menuToggle;
+    render() {
+        return (
+            <div className={cssClasses.MenuToggle} onClick={this.props.onToggleMenu} >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        )
+    }
+
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onToggleMenu: () => dispatch({ type: actionTypes.TOGGLE_MENU }),
+    }
+}
+
+export default connect(null, mapDispatchToProps)(MenuToggle);

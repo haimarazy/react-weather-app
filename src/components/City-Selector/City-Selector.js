@@ -1,5 +1,7 @@
 import React from 'react';
 import cssClasses from './City-Selector.css';
+import { connect } from 'react-redux';
+import * as actionTypes from './../../store/action-types';
 
 class CitySelector extends React.Component {
 
@@ -10,7 +12,7 @@ class CitySelector extends React.Component {
 
     formSubmitHandler = (event) => {
         event.preventDefault();
-        this.props.onSelectCity(this.cityInput.current.value);
+        this.props.onChangeCity(this.cityInput.current.value);
     }  
 
     render() {
@@ -33,4 +35,16 @@ class CitySelector extends React.Component {
 
 }
 
-export default CitySelector;
+const mapStateToProps = state => {
+    return {
+        city: state.city
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onChangeCity: (city) => dispatch({ type: actionTypes.CHANGE_CITY, value: city})
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(CitySelector);

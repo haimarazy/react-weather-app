@@ -5,7 +5,7 @@ const toolbar = (props) => {
 
     return (
         <div>
-            <MenuToggle toggleMenu={props.toggleMenu}/>
+            <MenuToggle />
         </div>
     )
 
