@@ -21,7 +21,7 @@ const closeMenu = (state) => {
     }    
 }
 
-const changeTheme = (state, action) => {
+const setTheme = (state, action) => {
     return {
         ...state,
         theme: action.theme,
@@ -29,11 +29,26 @@ const changeTheme = (state, action) => {
     }
 }
 
-const changeCity = (state, action) => {
+const setCity = (state, action) => {
     return {
         ...state,
-        city: action.value,
+        city: action.city,
         menuVisible: false
+    }
+}
+
+const setForecast = (state, action) => {
+
+    let forecast = null;
+
+    if (action.forecast && action.forecast.length > 0) {
+        forecast = action.forecast.slice(0, 5);
+        forecast[0].day = 'Now';
+    }
+
+    return {
+        ...state,
+        forecast: forecast
     }
 }
 
@@ -42,8 +57,9 @@ const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.TOGGLE_MENU: return toggleMenu(state);
         case actionTypes.CLOSE_MENU: return closeMenu(state);
-        case actionTypes.CHANGE_THEME: return changeTheme(state, action);
-        case actionTypes.CHANGE_CITY: return changeCity(state, action);
+        case actionTypes.SET_THEME: return setTheme(state, action);
+        case actionTypes.SET_CITY: return setCity(state, action);
+        case actionTypes.SET_FORECAST: return setForecast(state, action);
         default: return state;
     }
 

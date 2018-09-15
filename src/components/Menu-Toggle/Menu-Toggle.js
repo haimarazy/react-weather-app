@@ -1,7 +1,7 @@
 import React from 'react';
 import cssClasses from './Menu-Toggle.css';
 import { connect } from 'react-redux';
-import * as actionCreators from './../../store/action-creators';
+import * as actions from './../../store/actions';
 
 class MenuToggle extends React.Component {
 
@@ -20,7 +20,7 @@ class MenuToggle extends React.Component {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onToggleMenu: () => dispatch(actionCreators.toggleMenu())
+        onToggleMenu: () => dispatch(actions.toggleMenu())
     }
 }
 

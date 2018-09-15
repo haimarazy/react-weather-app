@@ -1,7 +1,7 @@
 import React from 'react';
 import cssClasses from './City-Selector.css';
 import { connect } from 'react-redux';
-import * as actionCreators from './../../store/action-creators';
+import * as actions from './../../store/actions';
 
 class CitySelector extends React.Component {
 
@@ -12,7 +12,7 @@ class CitySelector extends React.Component {
 
     formSubmitHandler = (event) => {
         event.preventDefault();
-        this.props.onChangeCity(this.cityInput.current.value);
+        this.props.setCity(this.cityInput.current.value);
     }  
 
     render() {
@@ -43,7 +43,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onChangeCity: (city) => dispatch(actionCreators.changeCity(city))
+        setCity: (city) => dispatch(actions.setCity(city))
     }
 }
 

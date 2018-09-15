@@ -1,7 +1,7 @@
 import React from 'react';
 import CitySelector from './../../components/City-Selector/City-Selector';
 import cssClasses from './Side-Menu.css';
-import * as actionCreators from '../../store/action-creators';
+import * as actions from '../../store/actions';
 import { connect } from 'react-redux';
 import ThemePicker from './../Theme-Picker/Theme-Picker';
 
@@ -41,7 +41,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onCloseMenu: () => dispatch(actionCreators.closeMenu())
+        onCloseMenu: () => dispatch(actions.closeMenu())
     }
 }
 
