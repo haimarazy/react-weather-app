@@ -1,3 +1,18 @@
+.ForecastItem {
+    width: 60%;
+    margin: 0
+}
+
+.ForecastItem:first-child {
+    font-size: 32px;
+    width: 100%;
+    margin: auto;
+}
+
+.ForecastItem:first-child .Low-Temp {
+    display: none;
+}
+
 .High-Temp {
     font-size: 18px;
     color: #EBC3BE;
@@ -5,76 +20,63 @@
 }
 
 
-.ForecastItem {
-  color: #D8897F;
-  margin: 0 25px;
-}
 
 .ForecastItem:first-child i {
     font-size: 72px;
     margin-bottom: 30px;
 }
 
-.ForecastItem:first-child .Low-Temp {
-  display: none;
-}
-
 
 .ForecastItem div {
-  text-align: center;
+    text-align: center;
 }
 
 .ForecastItem i {
-  font-size: 48px;
-  color: #EBC3BE;
-  margin-bottom: 20px;
+    font-size: 48px;
+    color: #EBC3BE;
+    margin-bottom: 20px;
 }
 
 .ForecastItem:first-child .Forecast-Day {
-  font-size: 20px;
+    font-size: 20px;
 } 
 
-@media (min-width: 768px) and (max-width: 1024px) {
 
-  .ForecastItem:first-child {
-    font-size: 32px;
-    width: 100%;
-    margin: auto;
-  }
+@media (min-width: 481px)  {
 
-  .ForecastItem:first-child .Low-Temp {
-    display: none;
-  }
-}
+    .ForecastItem {
+        width: 34%;
+    }
 
-@media (min-width: 481px) and (max-width: 767px) {
-
-  .ForecastItem {
-    width: 34%;
-    margin: 0
-  }
-
-  .ForecastItem:first-child {
-    font-size: 32px;
-    width: 100%;
-    margin: auto;
-  }
+    .ForecastItem:first-child {
+        font-size: 32px;
+        width: 100%;
+        margin: auto;
+    }
 
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 768px) {
 
-  .ForecastItem {
-    width: 60%;
-    margin: 0
-  }
+    .ForecastItem {
+        color: #D8897F;
+        margin: 0 25px;
+    }
 
-  .ForecastItem:first-child {
-    font-size: 32px;
-    width: 100%;
-    margin: auto;
-  }
+    .ForecastItem:first-child {
+        font-size: 32px;
+        width: 100%;
+        margin: auto;
+    }
 
 }
 
+
+@media (min-width: 1025px) {
+
+    .ForecastItem:first-child {
+        all: unset;
+    }
+
+}
