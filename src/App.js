@@ -1,10 +1,10 @@
 import React from 'react';
 import cssClasses from './App.css';
 import './assets/css/weather-icons.min.css';
-import Toolbar from './containers/Toolbar/Toolbar';
-import ForecastDisplay from './containers/Forecast-Display/Forecast-Display';
-import Footer from './containers/Footer/Footer';
-import SideMenu from './containers/Side-Menu/Side-Menu';
+import Toolbar from './components/Toolbar/Toolbar';
+import ForecastDisplay from './components/Forecast-Display/Forecast-Display';
+import Footer from './components/Footer/Footer';
+import SlideInMenu from './components/Slide-In-Menu/Slide-In-Menu';
 import { connect } from 'react-redux';
 import * as actions from './store/actions';
 
@@ -27,7 +27,7 @@ class App extends React.Component {
 				<Toolbar />
 				<ForecastDisplay />
 				<Footer city={this.props.city} />
-				<SideMenu />
+				<SlideInMenu />
 			</div>
 		);
 		

@@ -1,7 +1,7 @@
 import React from 'react';
 import cssClasses from './City-Selector.css';
 import { connect } from 'react-redux';
-import * as actions from './../../store/actions';
+import * as actions from '../../../store/actions';
 
 class CitySelector extends React.Component {
 

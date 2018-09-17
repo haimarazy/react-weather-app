@@ -1,8 +1,8 @@
 import React from 'react';
 import cssClasses from './Forecast-Display.css';
-import ForecastItem from './../../components/Forecast-Item/Forecast-Item';
+import ForecastItem from './Forecast-Item/Forecast-Item';
 import { connect } from 'react-redux';
-import ErrorDisplay from './../Error-Display/Error-Display';
+import ForecastError from './Forecast-Error/Forecast-Error';
 
 class ForecastDisplay extends React.Component {
 
@@ -15,7 +15,7 @@ class ForecastDisplay extends React.Component {
                 return <ForecastItem item={item} key={item.date} index={index} />
             });
         } else {
-            content = <ErrorDisplay />
+            content = <ForecastError />
         }
 
         return (

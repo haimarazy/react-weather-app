@@ -1,11 +1,11 @@
 import React from 'react';
-import MenuToggle from '../../components/Menu-Toggle/Menu-Toggle';
+import HamburgerButton from './Hamburger-Button/Hamburger-Button';
 
 const toolbar = (props) => {
 
     return (
         <div>
-            <MenuToggle />
+            <HamburgerButton />
         </div>
     )
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import cssClasses from './Forecast-Item.css';
-import WeatherIcons from './../../assets/css/weather-icons.min.css';
+// import WeatherIcons from './../../assets/css/weather-icons.min.css';
+import WeatherIcons from '../../../assets/css/weather-icons.min.css';
 
 const forecastItem = (props) => {
 

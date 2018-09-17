@@ -1,9 +1,9 @@
 import React from 'react';
-import CitySelector from './../../components/City-Selector/City-Selector';
-import cssClasses from './Side-Menu.css';
+import CitySelector from './City-Selector/City-Selector';
 import * as actions from '../../store/actions';
 import { connect } from 'react-redux';
-import ThemePicker from './../Theme-Picker/Theme-Picker';
+import ThemePicker from './Theme-Picker/Theme-Picker';
+import cssClasses from './Slide-In-Menu.css';
 
 class SideMenu extends React.Component {
 

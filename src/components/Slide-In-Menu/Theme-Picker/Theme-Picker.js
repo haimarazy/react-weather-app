@@ -1,7 +1,7 @@
 import React from 'react';
 import cssClasses from './Theme-Picker.css';
 import { connect } from 'react-redux';
-import * as actions from '../../store/actions';
+import * as actions from '../../../store/actions';
 
 const themeArray = [
     "mojo",
