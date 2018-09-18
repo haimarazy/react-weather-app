@@ -1,29 +1,29 @@
-.ThemePicker {
+.theme-picker {
     margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
     width: 210px;
 }
 
-.ThemePickerItem {
+.theme-picker-item {
   width: 70px;
   height: 70px;
   cursor: pointer;
   min-width: 33.33%
 }
 
-.ThemePickerItem:nth-child(1) {
+.theme-picker-item:nth-child(1) {
     border-top-left-radius: 30%;
 }
 
-.ThemePickerItem:nth-child(3) {
+.theme-picker-item:nth-child(3) {
     border-top-right-radius: 30%;
 }
 
-.ThemePickerItem:nth-child(7) {
+.theme-picker-item:nth-child(7) {
     border-bottom-left-radius: 30%;
 }
 
-.ThemePickerItem:nth-child(9) {
+.theme-picker-item:nth-child(9) {
     border-bottom-right-radius: 30%;
 }

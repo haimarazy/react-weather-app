@@ -1,45 +1,60 @@
-.ForecastItem {
+.forecast-item {
     width: 60%;
     margin-bottom: 35px;
+
+    .High-Temp {
+        font-size: 18px;
+        color: #EBC3BE;
+        font-family: sans-serif;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    i {
+        font-size: 48px;
+        color: #EBC3BE;
+        margin-bottom: 20px;
+    }
+
+    &:first-child {
+        font-size: 32px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .Low-Temp {
+            display: none;
+        }
+
+        i {
+            font-size: 72px;
+            margin-bottom: 30px;
+        }    
+
+        .Forecast-Day {
+            font-size: 20px;
+        }         
+        
+    }
+
 }
 
-.ForecastItem:first-child {
-    font-size: 32px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.ForecastItem:first-child .Low-Temp {
-    display: none;
-}
-
-.ForecastItem .High-Temp {
-    font-size: 18px;
-    color: #EBC3BE;
-    font-family: sans-serif;
-}
-
-.ForecastItem:first-child i {
-    font-size: 72px;
-    margin-bottom: 30px;
-}
 
 
-.ForecastItem div {
-    text-align: center;
-}
 
-.ForecastItem i {
-    font-size: 48px;
-    color: #EBC3BE;
-    margin-bottom: 20px;
-}
 
-.ForecastItem:first-child .Forecast-Day {
-    font-size: 20px;
-} 
 
+
+
+
+
+
+
+
+
+/*
 
 @media (min-width: 481px)  {
 
@@ -53,8 +68,6 @@
     }
 
 }
-
-/*
 
 @media (min-width: 768px) {
 

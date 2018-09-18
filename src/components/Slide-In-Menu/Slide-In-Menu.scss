@@ -1,4 +1,4 @@
-.SideMenu {
+.slide-in-menu {
     position: fixed;
     width: 300px;
     max-width: 70%;
@@ -14,15 +14,11 @@
     font-weight: bold;
 }
 
-.SideMenuVisible {
-    transform: translateX(0);
-}
-
-.SideMenuHidden {
+.hidden {
     transform: translateX(-100%);
 }
 
-.ClickCatcher {
+.click-catcher {
     position: fixed;
     width: 100vw;
     left: 0;
@@ -33,11 +29,7 @@
     opacity: 0;
 }
 
-.ClickCatcherHidden {
-    transform: translateX(-100%);
-}
-
-.MenuCloseButton {
+.close-button {
     font-size: 32px;
     color:  #D8897F;
     cursor: pointer;

@@ -23,7 +23,7 @@ class CitySelector extends React.Component {
                 <form onSubmit={this.formSubmitHandler}>
                     <input
                         type="text"
-                            className={styles['City-Input']}
+                            className={styles['city-input']}
                         ref={this.cityInput}
                         defaultValue={this.props.city}
                     />

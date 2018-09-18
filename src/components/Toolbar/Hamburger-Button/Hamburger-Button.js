@@ -7,7 +7,7 @@ class MenuToggle extends React.Component {
 
     render() {
         return (
-            <div className={styles.MenuToggle} onClick={this.props.onToggleMenu} >
+            <div className={styles['hamburger-button']} onClick={this.props.onToggleMenu} >
                 <div></div>
                 <div></div>
                 <div></div>

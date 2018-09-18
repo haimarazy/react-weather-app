@@ -1,4 +1,4 @@
-.MenuToggle {
+.hamburger-button {
     width: 40px;
     height: 40px;
     display: flex;
@@ -8,10 +8,12 @@
     padding: 10px 0;
     cursor: pointer;
     margin-left: 10px;
+
+    div {
+        width: 90%;
+        height: 3px;
+        background-color: #D8897F;
+    }
+
 }
 
-.MenuToggle div {
-    width: 90%;
-    height: 3px;
-    background-color: #D8897F;
-}

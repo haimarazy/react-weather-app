@@ -19,7 +19,7 @@ class ForecastDisplay extends React.Component {
         }
 
         return (
-            <main className={styles.Main}>
+            <main className={styles['forecast-display']}>
                 {content}
             </main>
         )

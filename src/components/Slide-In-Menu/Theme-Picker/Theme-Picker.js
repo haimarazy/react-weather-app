@@ -22,7 +22,7 @@ class ThemePicker extends React.Component {
 
         const themePickerItems = themeArray.map(theme => {
             return <div 
-                className={styles.ThemePickerItem} 
+                className={styles['theme-picker-item']} 
                         data-theme={theme} key={theme} 
                 onClick={() => this.props.setTheme(theme)}
                     >
@@ -32,7 +32,7 @@ class ThemePicker extends React.Component {
         return (
             <section>
                 Theme
-                <div className={styles.ThemePicker}>
+                <div className={styles['theme-picker']}>
                     {themePickerItems}
                 </div>
             </section>

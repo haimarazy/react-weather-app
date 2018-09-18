@@ -9,7 +9,7 @@ const forecastItem = (props) => {
     const glyphClass = `${wiGenericClass} ${wiCodeClass}`;
 
     return (
-        <div className={styles.ForecastItem}>
+        <div className={styles['forecast-item']}>
         
             <div><i className={glyphClass}></i></div>
             <div>
