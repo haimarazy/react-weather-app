@@ -1,10 +1,10 @@
 import React from 'react';
-import cssClasses from './Footer.css';
+import styles from './Footer.scss';
 
 const footer = (props) => {
 
     return (
-        <footer className={cssClasses.Footer} >
+        <footer className={styles.Footer} >
             {props.city}
         </footer>
     )

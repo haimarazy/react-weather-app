@@ -1,10 +1,10 @@
 import React from 'react';
-import cssClasses from './Forecast-Error.css';
+import styles from './Forecast-Error.scss';
 
 const errorDisplay = (props) => {
 
     return (
-        <div className={cssClasses['error-display']}>
+        <div className={styles['error-display']}>
             Error getting weather data from the server.
         </div>
     )

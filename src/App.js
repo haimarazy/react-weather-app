@@ -1,5 +1,5 @@
 import React from 'react';
-import cssClasses from './App.css';
+import styles from './App.scss';
 import './assets/css/weather-icons.min.css';
 import Toolbar from './components/Toolbar/Toolbar';
 import ForecastDisplay from './components/Forecast-Display/Forecast-Display';
@@ -23,7 +23,7 @@ class App extends React.Component {
 	render() {
 
 		return (
-			<div className={cssClasses.App} data-theme={this.props.theme}>
+            <div className={styles.App} data-theme={this.props.theme}>
 				<Toolbar />
 				<ForecastDisplay />
 				<Footer city={this.props.city} />

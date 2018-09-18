@@ -1,5 +1,5 @@
 import React from 'react';
-import cssClasses from './Hamburger-Button.css';
+import styles from './Hamburger-Button.scss';
 import { connect } from 'react-redux';
 import * as actions from './../../../store/actions';
 
@@ -7,7 +7,7 @@ class MenuToggle extends React.Component {
 
     render() {
         return (
-            <div className={cssClasses.MenuToggle} onClick={this.props.onToggleMenu} >
+            <div className={styles.MenuToggle} onClick={this.props.onToggleMenu} >
                 <div></div>
                 <div></div>
                 <div></div>

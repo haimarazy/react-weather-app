@@ -1,5 +1,5 @@
 import React from 'react';
-import cssClasses from './Forecast-Display.css';
+import styles from './Forecast-Display.scss';
 import ForecastItem from './Forecast-Item/Forecast-Item';
 import { connect } from 'react-redux';
 import ForecastError from './Forecast-Error/Forecast-Error';
@@ -19,7 +19,7 @@ class ForecastDisplay extends React.Component {
         }
 
         return (
-            <main className={cssClasses.Main}>
+            <main className={styles.Main}>
                 {content}
             </main>
         )

@@ -1,5 +1,5 @@
 import React from 'react';
-import cssClasses from './Forecast-Item.css';
+import styles from './Forecast-Item.scss';
 import WeatherIcons from '../../../assets/css/weather-icons.min.css';
 
 const forecastItem = (props) => {
@@ -9,15 +9,15 @@ const forecastItem = (props) => {
     const glyphClass = `${wiGenericClass} ${wiCodeClass}`;
 
     return (
-        <div className={cssClasses.ForecastItem}>
+        <div className={styles.ForecastItem}>
         
             <div><i className={glyphClass}></i></div>
             <div>
-                <span className={cssClasses['High-Temp']}> {props.item.high}&deg; </span>
-                <span className={cssClasses['Low-Temp']}> {props.item.low}&deg; </span>
+                <span className={styles['High-Temp']}> {props.item.high}&deg; </span>
+                <span className={styles['Low-Temp']}> {props.item.low}&deg; </span>
             </div>
-            <div className={cssClasses['Forecast-Day']}>{props.item.day}</div>
-            <div className={cssClasses['Forecast-Text']}>{props.item.text}</div>
+            <div className={styles['Forecast-Day']}>{props.item.day}</div>
+            <div className={styles['Forecast-Text']}>{props.item.text}</div>
             
         </div>
     )

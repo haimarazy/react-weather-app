@@ -3,17 +3,17 @@ import CitySelector from './City-Selector/City-Selector';
 import * as actions from '../../store/actions';
 import { connect } from 'react-redux';
 import ThemePicker from './Theme-Picker/Theme-Picker';
-import cssClasses from './Slide-In-Menu.css';
+import styles from './Slide-In-Menu.scss';
 
 class SideMenu extends React.Component {
 
     render() {
-        const menuClasses = [cssClasses.SideMenu];
-        menuClasses.push(this.props.menuVisible ? cssClasses.SideMenuVisible : cssClasses.SideMenuHidden);
+        const menuClasses = [styles.SideMenu];
+        menuClasses.push(this.props.menuVisible ? styles.SideMenuVisible : styles.SideMenuHidden);
         const menuElementClass = menuClasses.join(' ');
 
-        const clickCatcherClasses = [cssClasses.ClickCatcher];
-        !this.props.menuVisible && clickCatcherClasses.push(cssClasses.ClickCatcherHidden);
+        const clickCatcherClasses = [styles.ClickCatcher];
+        !this.props.menuVisible && clickCatcherClasses.push(styles.ClickCatcherHidden);
         const clickCatcherElementClass = clickCatcherClasses.join(' ');
 
 
@@ -22,7 +22,7 @@ class SideMenu extends React.Component {
             <React.Fragment>
                 <div className={clickCatcherElementClass} onClick={this.props.onCloseMenu}></div>
                 <aside className={menuElementClass}>
-                    <span className={cssClasses.MenuCloseButton} onClick={this.props.onCloseMenu}>&times;</span>
+                    <span className={styles.MenuCloseButton} onClick={this.props.onCloseMenu}>&times;</span>
                     <CitySelector />
                     <ThemePicker />
                 </aside>

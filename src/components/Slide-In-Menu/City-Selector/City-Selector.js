@@ -1,5 +1,5 @@
 import React from 'react';
-import cssClasses from './City-Selector.css';
+import styles from './City-Selector.scss';
 import { connect } from 'react-redux';
 import * as actions from '../../../store/actions';
 
@@ -23,7 +23,7 @@ class CitySelector extends React.Component {
                 <form onSubmit={this.formSubmitHandler}>
                     <input
                         type="text"
-                        className={cssClasses['City-Input']}
+                            className={styles['City-Input']}
                         ref={this.cityInput}
                         defaultValue={this.props.city}
                     />

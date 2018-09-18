@@ -1,5 +1,5 @@
 import React from 'react';
-import cssClasses from './Theme-Picker.css';
+import styles from './Theme-Picker.scss';
 import { connect } from 'react-redux';
 import * as actions from '../../../store/actions';
 
@@ -22,7 +22,7 @@ class ThemePicker extends React.Component {
 
         const themePickerItems = themeArray.map(theme => {
             return <div 
-                        className={cssClasses.ThemePickerItem} 
+                className={styles.ThemePickerItem} 
                         data-theme={theme} key={theme} 
                 onClick={() => this.props.setTheme(theme)}
                     >
@@ -32,7 +32,7 @@ class ThemePicker extends React.Component {
         return (
             <section>
                 Theme
-                <div className={cssClasses.ThemePicker}>
+                <div className={styles.ThemePicker}>
                     {themePickerItems}
                 </div>
             </section>
