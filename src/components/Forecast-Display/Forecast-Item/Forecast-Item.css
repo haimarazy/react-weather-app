@@ -1,25 +1,24 @@
 .ForecastItem {
     width: 60%;
-    margin: 0
+    margin-bottom: 35px;
 }
 
 .ForecastItem:first-child {
     font-size: 32px;
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ForecastItem:first-child .Low-Temp {
     display: none;
 }
 
-.High-Temp {
+.ForecastItem .High-Temp {
     font-size: 18px;
     color: #EBC3BE;
     font-family: sans-serif;
 }
-
-
 
 .ForecastItem:first-child i {
     font-size: 72px;
@@ -51,15 +50,16 @@
     .ForecastItem:first-child {
         font-size: 32px;
         width: 100%;
-        margin: auto;
     }
 
 }
 
+/*
 
 @media (min-width: 768px) {
 
     .ForecastItem {
+        width: 24%;
         color: #D8897F;
         margin: 0 25px;
     }
@@ -67,10 +67,11 @@
     .ForecastItem:first-child {
         font-size: 32px;
         width: 100%;
-        margin: auto;
     }
 
 }
+
+
 
 
 @media (min-width: 1025px) {
@@ -80,3 +81,4 @@
     }
 
 }
+*/
