@@ -1,97 +1,82 @@
+
+/* Default styling - all screen sizes unless overridden by media queries below */
+
 .forecast-item {
-    width: 60%;
-    margin-bottom: 35px;
+
+    flex-basis: 100%;
+    margin-bottom: 3.3em;
+    font-size: 16px;
 
     .high-temp {
-        font-size: 18px;
+        font-size: 26px;
         color: #EBC3BE;
         font-family: sans-serif;
     }
 
-    div {
+    .forecast-day {
+        font-size: 26px;
+    }
+
+    & > div {
         text-align: center;
     }
 
-    i {
+    .forecast-icon {
         font-size: 48px;
         color: #EBC3BE;
-        margin-bottom: 20px;
+        margin-bottom: .25em;
     }
 
     &:first-child {
-        font-size: 32px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
 
-        .Low-Temp {
+        flex-basis: 100%;
+        margin-bottom: 2.5em;
+        font-size: 32px;
+
+        .low-temp {
             display: none;
         }
 
-        i {
+        .forecast-icon {
             font-size: 72px;
-            margin-bottom: 30px;
-        }    
-
-        .Forecast-Day {
-            font-size: 20px;
-        }         
+        }  
         
+        .high-temp, .forecast-day {
+            font-size: 48px;
+        }        
+
     }
 
 }
 
+@media screen and (min-width: 481px)  {
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-@media (min-width: 481px)  {
-
-    .ForecastItem {
-        width: 34%;
-    }
-
-    .ForecastItem:first-child {
-        font-size: 32px;
-        width: 100%;
+    .forecast-item {
+        flex-basis: 50%;
     }
 
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
-    .ForecastItem {
-        width: 24%;
-        color: #D8897F;
-        margin: 0 25px;
-    }
-
-    .ForecastItem:first-child {
-        font-size: 32px;
-        width: 100%;
+    .forecast-item {
+        flex-basis: 25%;
     }
 
 }
-
-
 
 
 @media (min-width: 1025px) {
 
-    .ForecastItem:first-child {
-        all: unset;
+    .forecast-item {
+
+        flex-basis: 20%;
+
+        &:first-child {
+            flex-basis: 20%;
+        }
+
     }
 
 }
-*/
+

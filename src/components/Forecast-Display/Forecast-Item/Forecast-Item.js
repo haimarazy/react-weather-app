@@ -6,18 +6,18 @@ const forecastItem = (props) => {
 
     const wiGenericClass = WeatherIcons.wi;
     const wiCodeClass = WeatherIcons['wi-yahoo-' + props.item.code];
-    const glyphClass = `${wiGenericClass} ${wiCodeClass}`;
+    const glyphClass = `${wiGenericClass} ${wiCodeClass} ${styles['forecast-icon']}`;
 
     return (
         <div className={styles['forecast-item']}>
         
             <div><i className={glyphClass}></i></div>
             <div>
-                <span className={styles['high-Temp']}> {props.item.high}&deg; </span>
-                <span className={styles['Low-Temp']}> {props.item.low}&deg; </span>
+                <span className={styles['high-temp']}> {props.item.high}&deg; </span>
+                <span className={styles['low-temp']}> {props.item.low}&deg; </span>
             </div>
-            <div className={styles['Forecast-Day']}>{props.item.day}</div>
-            <div className={styles['Forecast-Text']}>{props.item.text}</div>
+            <div className={styles['forecast-day']}>{props.item.day}</div>
+            <div className={styles['forecast-text']}>{props.item.text}</div>
             
         </div>
     )
