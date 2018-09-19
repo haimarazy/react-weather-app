@@ -13,7 +13,7 @@ const forecastItem = (props) => {
         
             <div><i className={glyphClass}></i></div>
             <div>
-                <span className={styles['High-Temp']}> {props.item.high}&deg; </span>
+                <span className={styles['high-Temp']}> {props.item.high}&deg; </span>
                 <span className={styles['Low-Temp']}> {props.item.low}&deg; </span>
             </div>
             <div className={styles['Forecast-Day']}>{props.item.day}</div>
