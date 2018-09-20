@@ -6,13 +6,14 @@ import * as actions from './../../../store/actions';
 class MenuToggle extends React.Component {
 
     render() {
-        return (
-            <div className={styles['hamburger-button']} onClick={this.props.onToggleMenu} >
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
 
+        const hidden = this.props.hidden ? styles.hidden : '';
+        const classNames = `${styles['hamburger-button']} ${hidden}`;
+
+        return (
+            <span className = { classNames } onClick={this.props.onToggleMenu} >
+                &#9776;
+            </span>
         )
     }
 
@@ -24,4 +25,12 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(MenuToggle);
+const mapStateToProps = state => {
+    return {
+        hidden: state.menuVisible
+    }
+}
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(MenuToggle);

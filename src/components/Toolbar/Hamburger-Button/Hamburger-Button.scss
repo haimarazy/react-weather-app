@@ -1,19 +1,12 @@
 .hamburger-button {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    cursor: pointer;
-    margin-left: 10px;
 
-    div {
-        width: 90%;
-        height: 3px;
-        background-color: #D8897F;
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+    color: #D8897F;
+
+    &.hidden {
+        visibility: hidden;
     }
 
 }
-
